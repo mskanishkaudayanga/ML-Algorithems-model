@@ -1,0 +1,938 @@
+{
+  "Apple||Other": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 11": {
+    "storage": 128.0,
+    "ram": 128.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 11 Box": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Apple||iPhone 11 Pro": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 11 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 12": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 12 Pro": {
+    "storage": 256.0,
+    "ram": 128.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 12 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 12 mini": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 13": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 13 Pro": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 13 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 13 mini": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 14": {
+    "storage": 128.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 14 Plus": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 14 Pro": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 14 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 14 Pro Max 14pro": {
+    "storage": null,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Apple||iPhone 14 Pro Max Box": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 15": {
+    "storage": 128.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 15 Plus": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 15 Pro": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 15 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 16": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 16 Plus": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 16 Pro": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 16 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 16e": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 17": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 17 Pro": {
+    "storage": 256.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 17 Pro Max": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 6S": {
+    "storage": 32.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Apple||iPhone 7": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 7 Plus": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone 8": {
+    "storage": 192.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Apple||iPhone 8 Plus": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone SE 2": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone SE 3": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone X": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone XR": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone XR Red": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone XS": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Apple||iPhone XS Max": {
+    "storage": 64.0,
+    "ram": 64.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Other": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 10": {
+    "storage": 128.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 10 Pro": {
+    "storage": 128.0,
+    "ram": 16.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 10 Pro XL": {
+    "storage": 256.0,
+    "ram": 16.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 6": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 6 Pro": {
+    "storage": 70.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 6a": {
+    "storage": 128.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 7": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 7 Pro": {
+    "storage": 128.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 7a": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 8": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 8 Pro": {
+    "storage": 128.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 9": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 9 Pro": {
+    "storage": 128.0,
+    "ram": 16.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 9 Pro XL": {
+    "storage": 128.0,
+    "ram": 16.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Google||Pixel 9a": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Honor||400": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Honor||Other": {
+    "storage": 12.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Honor||X5c": {
+    "storage": 4.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Honor||X6c": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Honor||X7b": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Honor||X7d": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Huawei||Other": {
+    "storage": 8.0,
+    "ram": 6.0,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Infinix||Hot 60 Pro": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Infinix||Hot 60i": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Infinix||Note 50": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Infinix||Other": {
+    "storage": 64.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Nokia||105": {
+    "storage": null,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Nokia||Other": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "OnePlus||13": {
+    "storage": 16.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "OnePlus||15": {
+    "storage": 16.0,
+    "ram": 14.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "OnePlus||15R": {
+    "storage": 12.0,
+    "ram": 16.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "OnePlus||Other": {
+    "storage": 136.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Oppo||A31": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Oppo||A3s": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Oppo||Other": {
+    "storage": 8.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Other||Other": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Other||TCL 503": {
+    "storage": 7.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Realme||GT 7": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Realme||Other": {
+    "storage": 8.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A04e": {
+    "storage": 3.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A05": {
+    "storage": 4.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A06": {
+    "storage": 4.0,
+    "ram": 5.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A07": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A10s": {
+    "storage": 64.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A12": {
+    "storage": 6.0,
+    "ram": 128.0,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A14": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A15": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A16": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A17": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy A17 4G": {
+    "storage": 6.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A26": {
+    "storage": 8.0,
+    "ram": 7.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A32": {
+    "storage": 4.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A36": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A54": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A55": {
+    "storage": 256.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy A56": {
+    "storage": 8.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy F05": {
+    "storage": 4.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy F07": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy M01 Core": {
+    "storage": 16.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy M02": {
+    "storage": 2.5,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy M13": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy M16": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy M17": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy M33": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S21": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S21 FE": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S21 Ultra": {
+    "storage": 256.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S22": {
+    "storage": 256.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Samsung||Galaxy S22 Ultra": {
+    "storage": 134.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S23": {
+    "storage": 256.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S23 FE": {
+    "storage": 192.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S23 Ultra": {
+    "storage": 384.0,
+    "ram": 12.0,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S24": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S24 FE": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S24 Ultra": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S25": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S25 FE": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S25 Plus": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S25 Ultra": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy S25 Ultra 12": {
+    "storage": 256.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Galaxy Z Fold 7": {
+    "storage": 12.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Samsung||Other": {
+    "storage": 128.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Sony||Other": {
+    "storage": 64.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Sony||Xperia 10 IV": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Sony||Xperia XZ2": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Tecno||Other": {
+    "storage": 8.0,
+    "ram": 2.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Vivo||Other": {
+    "storage": 8.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Vivo||X100": {
+    "storage": 12.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Vivo||Y04": {
+    "storage": null,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Vivo||Y11": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Vivo||Y17": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Vivo||Y29": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Vivo||Y85": {
+    "storage": 6.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Vivo||Y93": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||13": {
+    "storage": 6.0,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Xiaomi||13C": {
+    "storage": 8.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Xiaomi||14C": {
+    "storage": 8.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||15": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Xiaomi||15C": {
+    "storage": 8.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||9A": {
+    "storage": 6.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||A3": {
+    "storage": 4.0,
+    "ram": 3.5,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||A5": {
+    "storage": 4.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||Note 13": {
+    "storage": 128.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||Note 14": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||Note 14 4G": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "Xiaomi||Note 14 Pro": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": true
+  },
+  "Xiaomi||Note 14 Pro Plus": {
+    "storage": 12.0,
+    "ram": 12.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||Note 15": {
+    "storage": 8.0,
+    "ram": 8.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "Xiaomi||Other": {
+    "storage": 64.0,
+    "ram": 6.0,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "ZTE||A76": {
+    "storage": 128.0,
+    "ram": null,
+    "has_storage": true,
+    "has_ram": false
+  },
+  "ZTE||Blade A35": {
+    "storage": null,
+    "ram": null,
+    "has_storage": false,
+    "has_ram": false
+  },
+  "ZTE||Other": {
+    "storage": 8.0,
+    "ram": 4.0,
+    "has_storage": true,
+    "has_ram": false
+  }
+}

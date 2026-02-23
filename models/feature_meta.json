@@ -1,0 +1,12 @@
+{
+  "feature_cols": [
+    "brand_clean_encoded",
+    "condition_encoded",
+    "location_clean_encoded",
+    "phone_model_clean_encoded",
+    "storage_gb",
+    "ram_gb",
+    "is_member_flag"
+  ],
+  "target_col": "price"
+}

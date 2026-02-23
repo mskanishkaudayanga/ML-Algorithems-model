@@ -1,0 +1,146 @@
+﻿Saved raw specs for 156 phone models
+
+=== Phones WITHOUT storage/RAM ===
+  Apple        Other                     storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 11                 storage= 128.0  ram= 128.0  has_storage=True  has_ram=False
+  Apple        iPhone 11 Box             storage= 128.0  ram=  None  has_storage=False  has_ram=False
+  Apple        iPhone 11 Pro             storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 11 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 12                 storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 12 Pro             storage= 256.0  ram= 128.0  has_storage=True  has_ram=False
+  Apple        iPhone 12 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 12 mini            storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 13                 storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 13 Pro             storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 13 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 13 mini            storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 14                 storage= 128.0  ram=   6.0  has_storage=True  has_ram=False
+  Apple        iPhone 14 Plus            storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 14 Pro             storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 14 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 14 Pro Max 14pro   storage=  None  ram=  None  has_storage=False  has_ram=False
+  Apple        iPhone 14 Pro Max Box     storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 15                 storage= 128.0  ram=   6.0  has_storage=True  has_ram=False
+  Apple        iPhone 15 Plus            storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 15 Pro             storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 15 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 16                 storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Apple        iPhone 16 Plus            storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 16 Pro             storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 16 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 16e                storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 17                 storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 17 Pro             storage= 256.0  ram=  12.0  has_storage=True  has_ram=False
+  Apple        iPhone 17 Pro Max         storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 6S                 storage=  32.0  ram=  None  has_storage=False  has_ram=False
+  Apple        iPhone 7                  storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 7 Plus             storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone 8                  storage= 192.0  ram=  None  has_storage=False  has_ram=False
+  Apple        iPhone 8 Plus             storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone SE 2               storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone SE 3               storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone X                  storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone XR                 storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone XR Red             storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone XS                 storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Apple        iPhone XS Max             storage=  64.0  ram=  64.0  has_storage=True  has_ram=False
+  Google       Other                     storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 10                  storage= 128.0  ram=  12.0  has_storage=True  has_ram=False
+  Google       Pixel 10 Pro              storage= 128.0  ram=  16.0  has_storage=True  has_ram=False
+  Google       Pixel 10 Pro XL           storage= 256.0  ram=  16.0  has_storage=True  has_ram=False
+  Google       Pixel 6                   storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 6 Pro               storage=  70.0  ram=  12.0  has_storage=True  has_ram=False
+  Google       Pixel 6a                  storage= 128.0  ram=   6.0  has_storage=True  has_ram=False
+  Google       Pixel 7                   storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 7 Pro               storage= 128.0  ram=  12.0  has_storage=True  has_ram=False
+  Google       Pixel 7a                  storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 8                   storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 8 Pro               storage= 128.0  ram=  12.0  has_storage=True  has_ram=False
+  Google       Pixel 9                   storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Google       Pixel 9 Pro               storage= 128.0  ram=  16.0  has_storage=True  has_ram=False
+  Google       Pixel 9 Pro XL            storage= 128.0  ram=  16.0  has_storage=True  has_ram=False
+  Google       Pixel 9a                  storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Honor        400                       storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Honor        Other                     storage=  12.0  ram=   8.0  has_storage=True  has_ram=False
+  Honor        X5c                       storage=   4.0  ram=  None  has_storage=False  has_ram=False
+  Honor        X6c                       storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Honor        X7b                       storage= 256.0  ram=  None  has_storage=False  has_ram=False
+  Honor        X7d                       storage=   8.0  ram=  None  has_storage=True  has_ram=False
+  Huawei       Other                     storage=   8.0  ram=   6.0  has_storage=False  has_ram=False
+  Infinix      Hot 60 Pro                storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Infinix      Note 50                   storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Nokia        105                       storage=  None  ram=  None  has_storage=False  has_ram=False
+  Nokia        Other                     storage=   4.0  ram=   4.0  has_storage=False  has_ram=False
+  OnePlus      13                        storage=  16.0  ram=  None  has_storage=True  has_ram=False
+  OnePlus      15R                       storage=  12.0  ram=  16.0  has_storage=True  has_ram=False
+  OnePlus      Other                     storage= 136.0  ram=  12.0  has_storage=True  has_ram=False
+  Oppo         Other                     storage=   8.0  ram=   6.0  has_storage=True  has_ram=False
+  Other        Other                     storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Other        TCL 503                   storage=   7.0  ram=   8.0  has_storage=True  has_ram=False
+  Realme       GT 7                      storage=   8.0  ram=  None  has_storage=True  has_ram=False
+  Realme       Other                     storage=   8.0  ram=   4.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A04e               storage=   3.0  ram=  None  has_storage=False  has_ram=False
+  Samsung      Galaxy A05                storage=   4.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy A06                storage=   4.0  ram=   5.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A07                storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A10s               storage=  64.0  ram=  None  has_storage=False  has_ram=False
+  Samsung      Galaxy A12                storage=   6.0  ram= 128.0  has_storage=False  has_ram=False
+  Samsung      Galaxy A14                storage=   4.0  ram=   4.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A15                storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A16                storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A17 4G             storage=   6.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy A26                storage=   8.0  ram=   7.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A32                storage=   4.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy A36                storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A54                storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy A55                storage= 256.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy A56                storage=   8.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy F05                storage=   4.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy M01 Core           storage=  16.0  ram=  None  has_storage=False  has_ram=False
+  Samsung      Galaxy M02                storage=   2.5  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy M33                storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S21                storage=   8.0  ram=  None  has_storage=False  has_ram=False
+  Samsung      Galaxy S21 FE             storage= 128.0  ram=  None  has_storage=False  has_ram=False
+  Samsung      Galaxy S21 Ultra          storage= 256.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S22 Ultra          storage= 134.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy S23                storage= 256.0  ram=   8.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S23 FE             storage= 192.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy S23 Ultra          storage= 384.0  ram=  12.0  has_storage=False  has_ram=False
+  Samsung      Galaxy S24                storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S24 FE             storage=   8.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy S24 Ultra          storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S25                storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S25 FE             storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S25 Plus           storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S25 Ultra          storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Samsung      Galaxy S25 Ultra 12       storage= 256.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Galaxy Z Fold 7           storage=  12.0  ram=  None  has_storage=True  has_ram=False
+  Samsung      Other                     storage= 128.0  ram=   8.0  has_storage=True  has_ram=False
+  Sony         Other                     storage=  64.0  ram=   8.0  has_storage=True  has_ram=False
+  Sony         Xperia 10 IV              storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  Tecno        Other                     storage=   8.0  ram=   2.0  has_storage=True  has_ram=False
+  Vivo         Other                     storage=   8.0  ram=   6.0  has_storage=True  has_ram=False
+  Vivo         X100                      storage=  12.0  ram=  None  has_storage=True  has_ram=False
+  Vivo         Y04                       storage=  None  ram=  None  has_storage=False  has_ram=False
+  Vivo         Y11                       storage=   8.0  ram=  None  has_storage=True  has_ram=False
+  Vivo         Y85                       storage=   6.0  ram=  None  has_storage=True  has_ram=False
+  Vivo         Y93                       storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Xiaomi       13                        storage=   6.0  ram=  None  has_storage=False  has_ram=False
+  Xiaomi       14C                       storage=   8.0  ram=  None  has_storage=True  has_ram=False
+  Xiaomi       15C                       storage=   8.0  ram=   6.0  has_storage=True  has_ram=False
+  Xiaomi       9A                        storage=   6.0  ram=   6.0  has_storage=True  has_ram=False
+  Xiaomi       A3                        storage=   4.0  ram=   3.5  has_storage=True  has_ram=False
+  Xiaomi       A5                        storage=   4.0  ram=   4.0  has_storage=True  has_ram=False
+  Xiaomi       Note 13                   storage= 128.0  ram=  12.0  has_storage=True  has_ram=False
+  Xiaomi       Note 14                   storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Xiaomi       Note 14 4G                storage=   8.0  ram=   8.0  has_storage=False  has_ram=False
+  Xiaomi       Note 14 Pro Plus          storage=  12.0  ram=  12.0  has_storage=True  has_ram=False
+  Xiaomi       Note 15                   storage=   8.0  ram=   8.0  has_storage=True  has_ram=False
+  Xiaomi       Other                     storage=  64.0  ram=   6.0  has_storage=True  has_ram=False
+  ZTE          A76                       storage= 128.0  ram=  None  has_storage=True  has_ram=False
+  ZTE          Blade A35                 storage=  None  ram=  None  has_storage=False  has_ram=False
+  ZTE          Other                     storage=   8.0  ram=   4.0  has_storage=True  has_ram=False
+
+=== Nokia models ===
+  105                       storage=None  ram=None  has_storage=False  has_ram=False
+  Other                     storage=4.0  ram=4.0  has_storage=False  has_ram=False
