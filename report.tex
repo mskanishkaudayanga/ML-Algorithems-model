@@ -1,0 +1,203 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{caption}
+
+% Set path for images
+\graphicspath{{outputs/plots/}}
+
+\title{
+\textbf{\LARGE Machine Learning Assignment Report}\\[1cm]
+\Large Level 4\\[0.6cm]
+\large Sri Lankan Mobile Phone Price Prediction
+}
+
+\author{Udayanga MSK – 214213B}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{Problem Statement and Relevance}
+In the Sri Lankan consumer electronics market, buyers and sellers often struggle to determine a fair market price for used and brand-new mobile phones. Setting the selling price too high makes it hard to find a buyer, while setting it too low results in financial loss. 
+
+Buyers face difficulties evaluating if a phone is priced fairly due to varying specifications like storage capacity, RAM, brand prestige, and physical condition. The market lacks a fast, data-driven way to estimate fair mobile phone prices instantly without relying on subjective opinions. 
+
+\subsection{How This Model Helps}
+This predictive model estimates the market price of mobile phones based on key factors such as brand, exact model, storage space, RAM, and physical condition. 
+\begin{itemize}
+    \item Sellers can use the model to set competitive and fair prices to sell their phones faster. 
+    \item Buyers can use the model to evaluate if a listed phone is reasonably priced before negotiating and purchasing. 
+\end{itemize}
+Overall, the model reduces uncertainty, improves financial transparency, and helps prevent scams or overpricing in the secondhand consumer electronics market. 
+
+\section{Dataset Description}
+
+\subsection{Data Source}
+The dataset was collected from \href{https://ikman.lk}{ikman.lk} by scraping publicly available mobile phone classified listings using a custom Python script utilizing \texttt{requests} and \texttt{BeautifulSoup4}. 
+
+\subsection{Features and Target Variable}
+\textbf{Features (Input Variables):}
+\begin{enumerate}
+    \item \textbf{Basic Phone Features:}
+    \begin{itemize}
+        \item \texttt{Storage\_gb}: Internal capacity converted to pure Gigabytes.
+        \item \texttt{Ram\_gb}: Memory converted to pure Gigabytes.
+    \end{itemize}
+    \item \textbf{Categorical Features (Encoded):}
+    \begin{itemize}
+        \item \texttt{Brand}: e.g., Apple, Samsung, Xiaomi.
+        \item \texttt{Phone\_Model}: Extracted specific models like iPhone 11, Galaxy S21.
+        \item \texttt{Condition}: Brand New vs. Used.
+        \item \texttt{Location}: Seller's district or city.
+        \item \texttt{Is\_Member}: Binary (0/1) variable indicating if the seller is a verified platform member.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Target Variable:} The asking price of the mobile phone in Sri Lankan Rupees (\texttt{Price\_LKR}). 
+
+\subsection{Dataset Size}
+\begin{itemize}
+    \item Exactly 5,000 mobile phone listings.
+    \item Contains both numeric and categorical data.
+\end{itemize}
+
+\section{Preprocessing}
+\begin{itemize}
+    \item \textbf{Price Standardization:} Text-based prices containing abbreviations like ``Rs'', ``Lakh'', and ``Mn'' were cleaned and converted to continuous numerical LKR values. 
+    \item \textbf{Missing Values:} Missing numeric features (Storage, RAM) were imputed using the median value. Missing categorical values were filled with ``Unknown''. 
+    \item \textbf{Derived Features:} The raw listing titles were parsed using Regex to isolate the exact phone model (e.g., removing words like ``Used'', ``Full Set'', ``5G''). Textual GB/TB values were converted into a pure numeric column. 
+    \item \textbf{Categorical Encoding:} Rare phone brands and locations with minimal samples were grouped into an ``Other'' category to prevent the curse of dimensionality and overfitting. Categorical features were encoded using \texttt{LabelEncoder}. 
+    \item \textbf{Scaling/Normalization:} Numeric features were standardized using \texttt{StandardScaler} so they all share the same scale prior to inference. 
+\end{itemize}
+
+\textbf{Ethical Considerations:}
+\begin{itemize}
+    \item Only publicly visible, non-sensitive public data was used. 
+    \item Rate limiting (sleep delays) was applied during scraping to avoid overloading the website’s servers. 
+    \item No Personally Identifiable Information (PII) such as seller names or direct phone numbers was collected or stored.
+\end{itemize}
+
+\section{Model Selection}
+
+\subsection{Selection of a New Machine Learning Algorithm}
+\textbf{Chosen Algorithm:} XGBoost (Extreme Gradient Boosting) \\
+\textbf{Reason for Selection:}
+\begin{itemize}
+    \item XGBoost is a highly powerful ensemble algorithm that combines multiple decision trees sequentially to drastically improve prediction accuracy. 
+    \item It natively handles complex, non-linear relationships, such as how the exact combination of ``Apple'' + ``Brand New'' impacts price entirely differently than ``Xiaomi'' + ``Used''. 
+    \item It is highly robust to missing data and sparse matrices and is widely considered the state-of-the-art for structured tabular data compared to basic regression techniques. 
+\end{itemize}
+
+\subsection{Difference from Standard Models}
+\begin{itemize}
+    \item \textbf{Decision Trees:} XGBoost builds hundreds of trees sequentially, where each new tree specifically corrects the residual errors made by previous ones. A standard decision tree builds only once and is highly prone to overfitting on noise. 
+    \item \textbf{Linear/Logistic Regression:} Simple linear regression assumes a straight-line relationship between features and the target. XGBoost automatically models complex non-linear curves without requiring manual feature engineering. 
+    \item \textbf{Random Forest:} Random Forest builds independent trees in parallel and averages them (Bagging), whereas XGBoost builds trees sequentially learning from past mistakes (Boosting), resulting in finer error correction.
+\end{itemize}
+
+\section{Model Training and Evaluation}
+
+\subsection{Train/Validation/Test Split}
+The dataset was divided into three distinct parts: 70\% training, 15\% validation, and 15\% testing. 
+The training set was used to fit the model, the validation set was used for early-stopping to halt training before overfitting occurred, and the test set was held out completely for a final, unbiased evaluation measurement. 
+
+\subsection{Hyperparameter Choices}
+\texttt{RandomizedSearchCV} was used to find the best combination of hyperparameters across 50 iterations with 3-fold cross-validation. 
+The best parameters found were: 
+\begin{itemize}
+    \item \texttt{n\_estimators} = 756 
+    \item \texttt{max\_depth} = 4 
+    \item \texttt{learning\_rate} = 0.048 
+    \item \texttt{subsample} = 0.897 
+    \item \texttt{colsample\_bytree} = 0.849 
+    \item \texttt{reg\_lambda} = 1.15 
+\end{itemize}
+
+\subsection{Performance Metrics Used}
+\begin{itemize}
+    \item \textbf{MAE (Mean Absolute Error):} Measures the average absolute difference between predicted and actual prices. 
+    \item \textbf{RMSE (Root Mean Squared Error):} Penalizes larger errors more heavily, effectively showing the standard deviation of unexplained variance. 
+    \item \textbf{R² (R-Squared Score):} Indicates exactly how much of the variance in the target variable is successfully explained by the model features. 
+\end{itemize}
+
+\subsection{Results}
+On the strictly unseen, held-out test set, the optimized model achieved: 
+\begin{itemize}
+    \item \textbf{MAE:} 14,317.79 LKR 
+    \item \textbf{RMSE:} 24,467.53 LKR 
+    \item \textbf{R²:} 0.9155
+\end{itemize}
+
+
+
+
+\subsection{Interpretation}
+The model successfully explains roughly 91.5\% of the variance in Sri Lankan mobile phone prices, which is an exceptionally strong and reliable result. The MAE indicates that, on average, the predicted price deviates by only $\sim$14,000 LKR. This is highly acceptable in the real world given unpredictable negotiation margins and unrecorded details (battery health, screen scratches). 
+
+\section{Explainability \& Interpretation}
+
+\subsection{Most Influential Features}
+From the SHAP feature importance analysis, the model primarily depends on the specific hardware configurations and brand prestige. 
+
+
+\begin{itemize}
+    \item \textbf{Top features:} The derived Phone Model is the most heavily influential feature overall, followed closely by the Phone Brand. 
+    \item \textbf{Specifications:} Condition (Brand New vs. Used) and internal Storage capacity (GB) strongly affect the predicted pricing tiers. 
+    \item \textbf{Location \& RAM:} These have a smaller, but still measurable, impact on the final valuation.
+\end{itemize}
+
+\subsection{What the Model Has Learned}
+The SHAP summary beeswarm plot visualizes exactly how each feature shifts the price: 
+
+
+\begin{itemize}
+    \item \textbf{Brands \& Models:} Premium models (e.g., latest iPhones, Galaxy S-series) drastically push predicted prices to the right (higher). 
+    \item \textbf{Condition:} Discovering a phone is in ``Used'' condition firmly decreases the predicted value compared to ``Brand New''. 
+    \item \textbf{Storage \& RAM:} High hardware specs (e.g., 256GB, 512GB, 8GB RAM) correspond with positive SHAP values, meaning the model recognized they add monetary value to the listing. 
+\end{itemize}
+
+\subsection{Alignment with Domain Knowledge}
+The model behaves exactly as a human technology expert would evaluate the market. iPhones and Samsung flagships retain far more secondhand value, which the model correctly assigns a premium to. Increased storage capacity is a known direct price multiplier in smartphones, which the model learned completely autonomously.
+
+
+\section{Critical Discussion}
+
+\subsection{Limitations of the Model}
+The model strictly predicts the ``asking price'' listed by sellers on \href{https://ikman.lk}{ikman.lk}, which is often slightly higher than the final negotiated ``selling price''. It cannot account for hidden physical defects (scratched screens, degraded battery health, broken camera lenses) because these are unstructured data hidden within paragraph descriptions. 
+
+\subsection{Data Quality Issues}
+Online classifieds data can be noisy. Some sellers use fake ``clickbait'' prices (e.g., Rs 1,111) to gain visibility, or mistype storage capacity. While systematic data cleaning and outlier clipping minimized this, extreme edge cases can still exist. Basic keypad phones (e.g., Nokia 105) rarely have listed storage or RAM. Special imputation methods had to be implemented, slightly diluting the numeric importance for low-tier phones. 
+
+\subsection{Risks of Bias or Unfairness}
+Because rare phone brands (e.g., Nothing Phone, Asus ROG) were grouped into an ``Other'' category to preserve statistical validity, the model is technically biased against niche premium phones. It will likely predict a general ``average'' price for them, effectively underpricing expensive niche imports. 
+
+\subsection{Potential Real-World Impact and Ethical Considerations}
+The model has a highly positive real-world impact by democratizing price knowledge, ensuring buyers are not scammed by overpriced listings, and helping legitimate sellers find buyers rapidly. Ethically, the model uses only safe, non-discriminatory hardware features (RAM, Storage, Brand), completely avoiding sensitive characteristics like seller location (for redlining) as primary factors, ensuring minimal socioeconomic bias in price predictions. 
+
+\section{Front End Integration}
+A highly interactive, modern web application was explicitly developed using the Streamlit framework to deploy the model to real-world users. 
+
+\textbf{Key User Experience Features:}
+\begin{itemize}
+    \item \textbf{Dynamic Filtering:} Dropdown menus are interlinked. Selecting ``Apple'' automatically updates the Phone Model dropdown to only display iPhones, preventing erroneous inputs. 
+    \item \textbf{Smart Specs:} If a user selects a basic keypad phone (e.g., Nokia 105), the UI intelligently hides the RAM \& Storage sliders with a warning prompt, utilizing baseline smart-defaults under the hood so prediction doesn't break. 
+    \item \textbf{Visual Explanations (Local SHAP):} Beyond just outputting a price, the UI produces a beautiful custom Horizontal Bar Chart for every single prediction. This chart explicitly tells the user exactly how much money the individual phone's brand, storage, and condition respectively added or subtracted from the baseline price. 
+    \item \textbf{Professional Aesthetic:} Custom CSS was utilized to guarantee high-contrast text, sleek metric cards, and an intuitive layout.
+\end{itemize}
+
+\end{document}
