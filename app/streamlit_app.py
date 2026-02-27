@@ -18,6 +18,7 @@ Usage:
 import os
 import sys
 import json
+import base64
 import warnings
 
 import numpy as np
@@ -38,6 +39,9 @@ MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 OUTPUTS_DIR = os.path.join(PROJECT_ROOT, "outputs")
 PLOTS_DIR = os.path.join(OUTPUTS_DIR, "plots")
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+LOGO_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logo.png")
+
+APP_NAME = "PriceLK"
 
 # ---------------------------------------------------------------------------
 # Page Config
@@ -85,8 +89,91 @@ st.markdown("""
 
     /* --- Main container --- */
     .main .block-container {
-        padding-top: 2rem;
+        padding-top: 1rem;
         max-width: 1200px;
+    }
+
+    /* ============================================================
+       TOP NAVBAR
+       ============================================================ */
+    .top-navbar {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1.5rem;
+        background: linear-gradient(135deg, #1E40AF 0%, #2563EB 50%, #3B82F6 100%);
+        border-radius: 14px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 16px rgba(30, 64, 175, 0.2);
+    }
+    .top-navbar img {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        object-fit: cover;
+    }
+    .top-navbar .nav-brand {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-navbar .nav-title {
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: #FFFFFF !important;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+    }
+    .top-navbar .nav-subtitle {
+        font-size: 0.78rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.75) !important;
+        line-height: 1.3;
+    }
+    .top-navbar .nav-badge {
+        margin-left: auto;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        padding: 0.3rem 0.85rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #FFFFFF !important;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    /* ============================================================
+       SIDEBAR BRANDING
+       ============================================================ */
+    .sidebar-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 1rem;
+        margin: 0.5rem 0 0.75rem 0;
+        background: linear-gradient(135deg, #EFF6FF 0%, #F0F9FF 100%);
+        border: 1px solid #DBEAFE;
+        border-radius: 12px;
+    }
+    .sidebar-brand img {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 2px solid #E2E8F0;
+        object-fit: cover;
+    }
+    .sidebar-brand .sb-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1E293B !important;
+        line-height: 1.2;
+    }
+    .sidebar-brand .sb-tag {
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #64748B !important;
+        line-height: 1.3;
     }
 
     /* ============================================================
@@ -292,6 +379,20 @@ st.markdown("""
 
 
 # ---------------------------------------------------------------------------
+# Helper — encode logo as base64 data URI so it renders inline
+# ---------------------------------------------------------------------------
+
+@st.cache_data
+def get_logo_base64():
+    """Read logo.png and return a base64-encoded data URI string."""
+    if os.path.exists(LOGO_PATH):
+        with open(LOGO_PATH, "rb") as f:
+            data = base64.b64encode(f.read()).decode()
+        return f"data:image/png;base64,{data}"
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Load model and metadata
 # ---------------------------------------------------------------------------
 
@@ -364,6 +465,20 @@ def get_phone_specs(brand, phone_model, phone_specs):
 
 def render_sidebar(column_info, encoders, brand_model_map, phone_specs):
     """Render sidebar. Model dropdown filters by brand; storage/RAM auto-detects."""
+    # --- Sidebar branding ---
+    logo_b64 = get_logo_base64()
+    logo_img = f'<img src="{logo_b64}" alt="Logo">' if logo_b64 else ''
+    st.sidebar.markdown(f"""
+    <div class="sidebar-brand">
+        {logo_img}
+        <div>
+            <div class="sb-name">{APP_NAME}</div>
+            <div class="sb-tag">Price Predictor</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    st.sidebar.markdown("---")
+
     st.sidebar.markdown("## Phone Specifications")
     st.sidebar.markdown("---")
 
@@ -637,15 +752,18 @@ def main():
     artifacts = load_artifacts()
     model, encoders, scaler, feature_meta, column_info, metrics, explainer, brand_model_map, phone_specs = artifacts
 
-    # --- Header ---
-    st.markdown("""
-    <div style="text-align: center; padding: 1rem 0 2rem 0;">
-        <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; color: #1E293B !important;">
-            Mobile Phone Price Predictor
-        </h1>
-        <p style="font-size: 1.05rem; color: #64748B !important; margin: 0;">
-            Sri Lanka Market Analysis — Powered by XGBoost Machine Learning
-        </p>
+    # --- Top Navbar with Logo & Name ---
+    logo_b64 = get_logo_base64()
+    logo_img = f'<img src="{logo_b64}" alt="Logo">' if logo_b64 else ''
+
+    st.markdown(f"""
+    <div class="top-navbar">
+        {logo_img}
+        <div class="nav-brand">
+            <div class="nav-title">{APP_NAME}</div>
+            <div class="nav-subtitle">Sri Lanka Mobile Phone Price Predictor</div>
+        </div>
+        <div class="nav-badge">XGBoost ML</div>
     </div>
     """, unsafe_allow_html=True)
 
